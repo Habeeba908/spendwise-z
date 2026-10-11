@@ -1,0 +1,16 @@
+:root{--bg:#0b0d14;--c:#151925;--c2:#1d2233;--t:#eef0f7;--m:#8d93aa;--g:#34d399;--r:#fb7185;--y:#fbbf24;--p:#8b5cf6}
+*{box-sizing:border-box;margin:0}body{background:radial-gradient(900px 500px at 80% -10%,#2a1b5c55,transparent),var(--bg);color:var(--t);font-family:Inter,system-ui,sans-serif;padding:16px;max-width:1100px;margin:auto}
+h1{font-size:24px}h2{font-size:14px;color:var(--m);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.card{background:var(--c);border:1px solid #ffffff12;border-radius:18px;padding:16px;animation:in .4s both}
+@keyframes in{from{opacity:0;transform:translateY(8px)}}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:12px 0}
+.two{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-bottom:12px}
+.big{font-size:24px;font-weight:700}.m{color:var(--m);font-size:12px}.g{color:var(--g)}.r{color:var(--r)}.y{color:var(--y)}
+input,select,button{background:var(--c2);color:var(--t);border:1px solid #ffffff1a;border-radius:10px;padding:9px 10px;font:inherit;font-size:14px;min-width:0}
+button{cursor:pointer;transition:.15s}button:hover{background:#2a3150}button:active{transform:scale(.96)}
+.pri{background:linear-gradient(135deg,var(--p),#6366f1);border:0;font-weight:600}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0}
+.sp{justify-content:space-between}.bar{height:8px;border-radius:9px;background:var(--c2);overflow:hidden}.bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--p),var(--g));transition:width .5s}
+.sim{border-color:#8b5cf666;box-shadow:0 0 40px #8b5cf622}.tog{width:42px;height:24px;border-radius:20px;padding:0;position:relative;background:var(--c2)}.tog.on{background:var(--g)}
+.tog:after{content:'';position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:.2s}.tog.on:after{left:21px}
+.toast{position:sticky;top:8px;z-index:9;background:#312e81;padding:10px 14px;border-radius:12px;margin-bottom:10px}
+.tx{max-height:220px;overflow:auto;font-size:13px}
